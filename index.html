@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form FCC</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+  
+  <!-- Head --> 
+  <head>
+    <title>Survey Form FCC</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+
+  <body>
+    
+    <!-- Information -->
+    <h1 id="title">Survey Form</h1>
+    <div id="outer-form">
+      <p>Let us know how to improve this form</p>
+      <form id="survey-form" method="GET" action="">
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email</label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email">
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age</label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="age">
+        </div>
+    </div>
+    
+        <!-- Role question -->
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which option best describes your current role?<label>
+      </div>
+          <div class="rightTab">
+            <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option value="student">Student</option>
+              <option value="job">Full time job</option>
+              <option value="learner">Full time learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>  
+    </div>
+    
+        <!-- reference section -->
+        <div class="rowTab">
+          <div class="labels">
+            <label for="userRating">* How likely is it you refer this form to a friend?</label>
+          </div>
+          
+          <div class="rightTab radio-inline">
+            <ul style="list-style: none;">
+              <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="userRatings"></label>Definitely</li>
+              <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="userRatings"></label>Maybe</li>
+              <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="userRatings">Not sure</label></li>
+            </ul> 
+        </div>
+        </div>
+            
+        <!-- what do you like most -->
+            <div class="rowTab">
+              <div class="labels">
+                <label for="most-like">What do you like most about this form?</label>
+              </div>
+              <div class="rightTab">
+                <select id="most-like" name="mostLike" class="dropdown">
+                  <option disabled selected value>Select an option</option>
+                  <option value="challenges">Challenges</option>
+                  <option value="projects">Projects</option>
+                  <option value="community">Community</option>
+                  <option value="openSource">Open Source</option>
+                </select>
+              </div>
+            </div> 
+            
+      <!--improvement section -->
+            <div class="rowTab">
+              <div class="labels"><label for="preferences">Things that could be improved<br>(Check all that apply):</label>
+            </div>
+            <div class="rightTab">
+              <ul id="preferences" style="list-style: none;">
+                <li class="checkbox"><label><input name="prefer" value="1" type-"checkbox" class="userRatings">lorem ipsum 1</label></li>
+                <li class="checkbox"><label class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings"></label>lorum ipsum2</li>
+                <li class="checkbox"><label class="checkbox"><input name="prefer" value="3" class="userRatings">lorem ipsum 3</label></li>
+                <li class="checkbox"><label class="checkbox"><input name="prefer" value="4" class="userRatings"></label>lorem ipsum 4</li>
+                <li class="checkbox"><label class="checkbox"><input name="prefer" value="5" class="userRatings"></label>lorem ipsum 5</li>
+                <li class="checkbox">
+                  <label class="checkbox"><input name="prefer" value="6" class="userRatings"></label>lorem ipsum 6</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- comments section -->
+          <div class="rowTabs">
+            <div class="labels">
+              <label for="comments">Any comments or suggestions?</label>
+            </div>
+            <div class="rightTab">
+              <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Please enter your comment here..."></textarea>
+            </div>
+          </div>
+         
+          <!-- Submit -->
+          <button id="submit" type="submit">Submit</submit>
+          
+    </form>
+      </div>
+      </body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
